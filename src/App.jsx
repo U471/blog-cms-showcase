@@ -15,7 +15,7 @@ export default function App() {
   const location = useLocation();
 
   useEffect(() => {
-    fetch("/src/data/blogs.json")
+    fetch("/data/blogs.json")
       .then((r) => r.json())
       .then((data) => setBlogs(data));
   }, []);
