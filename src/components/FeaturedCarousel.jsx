@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.css'
 export default function FeaturedCarousel({items}){
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: items.length > 3,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
